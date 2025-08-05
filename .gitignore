@@ -1,0 +1,12 @@
+# Archivos generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos del editor
+.idea/
+.vscode/
+
+# Archivos generados por Dart/Flutter
+.dart_tool/
+.packages
+build/
