@@ -58,19 +58,14 @@ void mostrarMenu() {
   stdout.write("Ingresa tu opción: ");
 }
 
-/// Limpia la consola, compatible con Windows, Linux y macOS.
 void limpiarConsola() {
   if (Platform.isWindows) {
-    // 'cls' para Windows
     print(Process.runSync("cls", [], runInShell: true).stdout);
   } else {
-    // 'clear' para Linux/macOS
     print(Process.runSync("clear", [], runInShell: true).stdout);
   }
 }
 
-/// Lee un valor double desde la consola con un mensaje personalizado.
-/// Vuelve a solicitar el valor si la entrada no es un número válido.
 double leerDouble(String mensaje) {
   while (true) {
     try {
@@ -82,8 +77,6 @@ double leerDouble(String mensaje) {
   }
 }
 
-/// Lee un valor entero desde la consola con un mensaje personalizado.
-/// Vuelve a solicitar el valor si la entrada no es un número entero válido.
 int leerInt(String mensaje) {
   while (true) {
     try {
